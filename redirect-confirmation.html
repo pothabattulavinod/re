@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <script>
+        // Retrieve the redirect URL from localStorage
+        const redirectURL = localStorage.getItem("redirectURL");
+
+        if (redirectURL) {
+            // Redirect to the stored URL
+            window.location.href = redirectURL;
+        } else {
+            // If no redirect URL is found, show an error or message
+            alert("Access Denied: No valid redirect URL found.");
+        }
+    </script>
+</body>
+</html>
