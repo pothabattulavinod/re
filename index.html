@@ -65,13 +65,13 @@
     <script>
         function checkPassword() {
             const passwordInput = document.getElementById('password').value;
-            const correctPassword = "your_secure_password"; // Replace with your password
+            const correctPassword = "1"; // Replace with your password
             const errorElement = document.getElementById('error');
 
             // Check if the password is correct
             if (passwordInput === correctPassword) {
                 // Store the redirect URL in localStorage (it won't be visible in page source)
-                localStorage.setItem("redirectURL", "https://redirected-website.com"); // Replace with your target URL
+                localStorage.setItem("redirectURL", "https://google.com"); // Replace with your target URL
                 window.location.href = "redirect-confirmation.html"; // Navigate to a confirmation page
             } else {
                 errorElement.style.display = "block";
